@@ -163,6 +163,15 @@ foreach my $cmd (
     "cast5-cbc","cast5-ecb", "cast5-cfb","cast5-ofb",
     "cast-cbc", "rc5-cbc", "rc5-ecb", "rc5-cfb", "rc5-ofb",
     "sm4-cbc", "sm4-ecb", "sm4-cfb", "sm4-ofb", "sm4-ctr"
+    "saiferv12-128-cbc", "saiferv12-128-cfb",
+    "saiferv12-128-ctr", "saiferv12-128-ecb", "saiferv12-128-ofb",
+    "saiferv12-128-cfb1", "saiferv12-128-cfb8",
+    "saiferv12-192-cbc", "saiferv12-192-cfb",
+    "saiferv12-192-ctr", "saiferv12-192-ecb", "saiferv12-192-ofb",
+    "saiferv12-192-cfb1", "saiferv12-192-cfb8",
+    "saiferv12-256-cbc", "saiferv12-256-cfb",
+    "saiferv12-256-ctr", "saiferv12-256-ecb", "saiferv12-256-ofb",
+    "saiferv12-256-cfb1", "saiferv12-256-cfb8"
 ) {
     my $str = "    {FT_cipher, \"$cmd\", enc_main, enc_options},\n";
     (my $algo = $cmd) =~ s/-.*//g;

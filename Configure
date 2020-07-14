@@ -397,6 +397,7 @@ my @disablables = (
     "rdrand",
     "rfc3779",
     "rmd160",
+    "saiferv12",
     "scrypt",
     "sctp",
     "seed",
