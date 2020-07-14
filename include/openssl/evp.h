@@ -889,6 +889,38 @@ const EVP_CIPHER *EVP_aria_256_ofb(void);
 const EVP_CIPHER *EVP_aria_256_gcm(void);
 const EVP_CIPHER *EVP_aria_256_ccm(void);
 # endif
+# ifndef OPENSSL_NO_SAIFERV12
+const EVP_CIPHER *EVP_saiferv12_128_ecb(void);
+const EVP_CIPHER *EVP_saiferv12_128_cbc(void);
+const EVP_CIPHER *EVP_saiferv12_128_cfb1(void);
+const EVP_CIPHER *EVP_saiferv12_128_cfb8(void);
+const EVP_CIPHER *EVP_saiferv12_128_cfb128(void);
+#  define EVP_saiferv12_128_cfb EVP_saiferv12_128_cfb128
+const EVP_CIPHER *EVP_saiferv12_128_ctr(void);
+const EVP_CIPHER *EVP_saiferv12_128_ofb(void);
+const EVP_CIPHER *EVP_saiferv12_128_gcm(void);
+const EVP_CIPHER *EVP_saiferv12_128_ccm(void);
+const EVP_CIPHER *EVP_saiferv12_192_ecb(void);
+const EVP_CIPHER *EVP_saiferv12_192_cbc(void);
+const EVP_CIPHER *EVP_saiferv12_192_cfb1(void);
+const EVP_CIPHER *EVP_saiferv12_192_cfb8(void);
+const EVP_CIPHER *EVP_saiferv12_192_cfb128(void);
+#  define EVP_saiferv12_192_cfb EVP_saiferv12_192_cfb128
+const EVP_CIPHER *EVP_saiferv12_192_ctr(void);
+const EVP_CIPHER *EVP_saiferv12_192_ofb(void);
+const EVP_CIPHER *EVP_saiferv12_192_gcm(void);
+const EVP_CIPHER *EVP_saiferv12_192_ccm(void);
+const EVP_CIPHER *EVP_saiferv12_256_ecb(void);
+const EVP_CIPHER *EVP_saiferv12_256_cbc(void);
+const EVP_CIPHER *EVP_saiferv12_256_cfb1(void);
+const EVP_CIPHER *EVP_saiferv12_256_cfb8(void);
+const EVP_CIPHER *EVP_saiferv12_256_cfb128(void);
+#  define EVP_saiferv12_256_cfb EVP_saiferv12_256_cfb128
+const EVP_CIPHER *EVP_saiferv12_256_ctr(void);
+const EVP_CIPHER *EVP_saiferv12_256_ofb(void);
+const EVP_CIPHER *EVP_saiferv12_256_gcm(void);
+const EVP_CIPHER *EVP_saiferv12_256_ccm(void);
+# endif
 # ifndef OPENSSL_NO_CAMELLIA
 const EVP_CIPHER *EVP_camellia_128_ecb(void);
 const EVP_CIPHER *EVP_camellia_128_cbc(void);

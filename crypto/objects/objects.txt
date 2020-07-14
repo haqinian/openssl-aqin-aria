@@ -1496,6 +1496,48 @@ aria 34                 : ARIA-128-GCM                  : aria-128-gcm
 aria 35                 : ARIA-192-GCM                  : aria-192-gcm
 aria 36                 : ARIA-256-GCM                  : aria-256-gcm
 
+# Definitions for SAIFERV12 cipher
+
+!Alias saiferv12 1 2 410 200046 1 1
+saiferv12 1                  : SAIFERV12-128-ECB                  : saiferv12-128-ecb
+saiferv12 2                  : SAIFERV12-128-CBC                  : saiferv12-128-cbc
+!Cname saiferv12-128-cfb128
+saiferv12 3                  : SAIFERV12-128-CFB                  : saiferv12-128-cfb
+!Cname saiferv12-128-ofb128
+saiferv12 4                  : SAIFERV12-128-OFB                  : saiferv12-128-ofb
+saiferv12 5			: SAIFERV12-128-CTR                  : saiferv12-128-ctr
+
+saiferv12 6                  : SAIFERV12-192-ECB                  : saiferv12-192-ecb
+saiferv12 7                  : SAIFERV12-192-CBC                  : saiferv12-192-cbc
+!Cname saiferv12-192-cfb128
+saiferv12 8                  : SAIFERV12-192-CFB                  : saiferv12-192-cfb
+!Cname saiferv12-192-ofb128
+saiferv12 9                  : SAIFERV12-192-OFB                  : saiferv12-192-ofb
+saiferv12 10                 : SAIFERV12-192-CTR                  : saiferv12-192-ctr
+
+saiferv12 11                 : SAIFERV12-256-ECB                  : saiferv12-256-ecb
+saiferv12 12                 : SAIFERV12-256-CBC                  : saiferv12-256-cbc
+!Cname saiferv12-256-cfb128
+saiferv12 13                 : SAIFERV12-256-CFB                  : saiferv12-256-cfb
+!Cname saiferv12-256-ofb128
+saiferv12 14                 : SAIFERV12-256-OFB                  : saiferv12-256-ofb
+saiferv12 15                 : SAIFERV12-256-CTR                  : saiferv12-256-ctr
+
+# There are no OIDs for these SAIFERV12 modes...
+                        : SAIFERV12-128-CFB1                 : saiferv12-128-cfb1
+                        : SAIFERV12-192-CFB1                 : saiferv12-192-cfb1
+                        : SAIFERV12-256-CFB1                 : saiferv12-256-cfb1
+                        : SAIFERV12-128-CFB8                 : saiferv12-128-cfb8
+                        : SAIFERV12-192-CFB8                 : saiferv12-192-cfb8
+                        : SAIFERV12-256-CFB8                 : saiferv12-256-cfb8
+
+saiferv12 37                 : SAIFERV12-128-CCM                  : saiferv12-128-ccm
+saiferv12 38                 : SAIFERV12-192-CCM                  : saiferv12-192-ccm
+saiferv12 39                 : SAIFERV12-256-CCM                  : saiferv12-256-ccm
+saiferv12 34                 : SAIFERV12-128-GCM                  : saiferv12-128-gcm
+saiferv12 35                 : SAIFERV12-192-GCM                  : saiferv12-192-gcm
+saiferv12 36                 : SAIFERV12-256-GCM                  : saiferv12-256-gcm
+
 # Definitions for SEED cipher - ECB, CBC, OFB mode
 
 member-body 410 200004  : KISA          : kisa

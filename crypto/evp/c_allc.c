@@ -227,6 +227,42 @@ void openssl_add_all_ciphers_int(void)
     EVP_add_cipher_alias(SN_aria_256_cbc, "aria256");
 #endif
 
+#ifndef OPENSSL_NO_SAIFERV12
+    EVP_add_cipher(EVP_saiferv12_128_ecb());
+    EVP_add_cipher(EVP_saiferv12_128_cbc());
+    EVP_add_cipher(EVP_saiferv12_128_cfb());
+    EVP_add_cipher(EVP_saiferv12_128_cfb1());
+    EVP_add_cipher(EVP_saiferv12_128_cfb8());
+    EVP_add_cipher(EVP_saiferv12_128_ctr());
+    EVP_add_cipher(EVP_saiferv12_128_ofb());
+    EVP_add_cipher(EVP_saiferv12_128_gcm());
+    EVP_add_cipher(EVP_saiferv12_128_ccm());
+    EVP_add_cipher_alias(SN_saiferv12_128_cbc, "SAIFERV12128");
+    EVP_add_cipher_alias(SN_saiferv12_128_cbc, "saiferv12128");
+    EVP_add_cipher(EVP_saiferv12_192_ecb());
+    EVP_add_cipher(EVP_saiferv12_192_cbc());
+    EVP_add_cipher(EVP_saiferv12_192_cfb());
+    EVP_add_cipher(EVP_saiferv12_192_cfb1());
+    EVP_add_cipher(EVP_saiferv12_192_cfb8());
+    EVP_add_cipher(EVP_saiferv12_192_ctr());
+    EVP_add_cipher(EVP_saiferv12_192_ofb());
+    EVP_add_cipher(EVP_saiferv12_192_gcm());
+    EVP_add_cipher(EVP_saiferv12_192_ccm());
+    EVP_add_cipher_alias(SN_saiferv12_192_cbc, "SAIFERV12192");
+    EVP_add_cipher_alias(SN_saiferv12_192_cbc, "saiferv12192");
+    EVP_add_cipher(EVP_saiferv12_256_ecb());
+    EVP_add_cipher(EVP_saiferv12_256_cbc());
+    EVP_add_cipher(EVP_saiferv12_256_cfb());
+    EVP_add_cipher(EVP_saiferv12_256_cfb1());
+    EVP_add_cipher(EVP_saiferv12_256_cfb8());
+    EVP_add_cipher(EVP_saiferv12_256_ctr());
+    EVP_add_cipher(EVP_saiferv12_256_ofb());
+    EVP_add_cipher(EVP_saiferv12_256_gcm());
+    EVP_add_cipher(EVP_saiferv12_256_ccm());
+    EVP_add_cipher_alias(SN_saiferv12_256_cbc, "SAIFERV12256");
+    EVP_add_cipher_alias(SN_saiferv12_256_cbc, "saiferv12256");
+#endif
+
 #ifndef OPENSSL_NO_CAMELLIA
     EVP_add_cipher(EVP_camellia_128_ecb());
     EVP_add_cipher(EVP_camellia_128_cbc());
