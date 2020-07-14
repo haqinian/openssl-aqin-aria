@@ -63,6 +63,11 @@ DEFINE_RUN_ONCE_STATIC(ossl_init_ssl_base)
     EVP_add_cipher(EVP_aria_128_gcm());
     EVP_add_cipher(EVP_aria_256_gcm());
 #endif
+//saiferv12
+#ifndef OPENSSL_NO_SAIFERV12
+    EVP_add_cipher(EVP_saiferv12_128_gcm());
+    EVP_add_cipher(EVP_saiferv12_256_gcm());
+#endif
 #ifndef OPENSSL_NO_CAMELLIA
     EVP_add_cipher(EVP_camellia_128_cbc());
     EVP_add_cipher(EVP_camellia_256_cbc());

@@ -131,6 +131,11 @@ extern "C" {
 # define SSL_TXT_ARIA128         "ARIA128"
 # define SSL_TXT_ARIA256         "ARIA256"
 
+# define SSL_TXT_SAIFERV12       "SAIFERV12"
+# define SSL_TXT_SAIFERV12_GCM   "SAIFERV12GCM"
+# define SSL_TXT_SAIFERV12128    "SAIFERV12128"
+# define SSL_TXT_SAIFERV12256    "SAIFERV12256"
+
 # define SSL_TXT_MD5             "MD5"
 # define SSL_TXT_SHA1            "SHA1"
 # define SSL_TXT_SHA             "SHA"/* same as "SHA1" */

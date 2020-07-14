@@ -230,6 +230,8 @@
 # define SSL_CHACHA20POLY1305    0x00080000U
 # define SSL_ARIA128GCM          0x00100000U
 # define SSL_ARIA256GCM          0x00200000U
+# define SSL_SAIFERV12128GCM     0x00400000U
+# define SSL_SAIFERV12256GCM     0x00800000U
 
 # define SSL_AESGCM              (SSL_AES128GCM | SSL_AES256GCM)
 # define SSL_AESCCM              (SSL_AES128CCM | SSL_AES256CCM | SSL_AES128CCM8 | SSL_AES256CCM8)
@@ -238,6 +240,8 @@
 # define SSL_CHACHA20            (SSL_CHACHA20POLY1305)
 # define SSL_ARIAGCM             (SSL_ARIA128GCM | SSL_ARIA256GCM)
 # define SSL_ARIA                (SSL_ARIAGCM)
+# define SSL_SAIFERV12GCM        (SSL_SAIFERV12128GCM | SSL_SAIFERV12256GCM)
+# define SSL_SAIFERV12           (SSL_SAIFERV12GCM)
 
 /* Bits for algorithm_mac (symmetric authentication) */
 

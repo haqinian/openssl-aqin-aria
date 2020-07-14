@@ -44,6 +44,8 @@
 #define SSL_ENC_ARIA128GCM_IDX  20
 #define SSL_ENC_ARIA256GCM_IDX  21
 #define SSL_ENC_NUM_IDX         22
+#define SSL_ENC_SAIFERV12128GCM_IDX  23
+#define SSL_ENC_SAIFERV12256GCM_IDX  24
 
 /* NB: make sure indices in these tables match values above */
 
@@ -76,6 +78,8 @@ static const ssl_cipher_table ssl_cipher_table_cipher[SSL_ENC_NUM_IDX] = {
     {SSL_CHACHA20POLY1305, NID_chacha20_poly1305}, /* SSL_ENC_CHACHA_IDX 19 */
     {SSL_ARIA128GCM, NID_aria_128_gcm}, /* SSL_ENC_ARIA128GCM_IDX 20 */
     {SSL_ARIA256GCM, NID_aria_256_gcm}, /* SSL_ENC_ARIA256GCM_IDX 21 */
+    {SSL_SAIFERV12128GCM, NID_saiferv12_128_gcm}, /* SSL_ENC_SAIFERV12128GCM_IDX 23 */
+    {SSL_SAIFERV12256GCM, NID_saiferv12_256_gcm}, /* SSL_ENC_SAIFERV12256GCM_IDX 24 */
 };
 
 static const EVP_CIPHER *ssl_cipher_methods[SSL_ENC_NUM_IDX];
@@ -280,6 +284,12 @@ static const SSL_CIPHER cipher_aliases[] = {
     {0, SSL_TXT_ARIA_GCM, NULL, 0, 0, 0, SSL_ARIA128GCM | SSL_ARIA256GCM},
     {0, SSL_TXT_ARIA128, NULL, 0, 0, 0, SSL_ARIA128GCM},
     {0, SSL_TXT_ARIA256, NULL, 0, 0, 0, SSL_ARIA256GCM},
+    
+    //SAIFERV12
+    {0, SSL_TXT_SAIFERV12, NULL, 0, 0, 0, SSL_SAIFERV12},
+    {0, SSL_TXT_SAIFERV12_GCM, NULL, 0, 0, 0, SSL_SAIFERV12128GCM | SSL_SAIFERV12256GCM},
+    {0, SSL_TXT_SAIFERV12128, NULL, 0, 0, 0, SSL_SAIFERV12128GCM},
+    {0, SSL_TXT_SAIFERV12256, NULL, 0, 0, 0, SSL_SAIFERV12256GCM},
 
     /* MAC aliases */
     {0, SSL_TXT_MD5, NULL, 0, 0, 0, 0, SSL_MD5},
@@ -1781,6 +1791,12 @@ char *SSL_CIPHER_description(const SSL_CIPHER *cipher, char *buf, int len)
         break;
     case SSL_ARIA256GCM:
         enc = "ARIAGCM(256)";
+        break;
+    case SSL_SAIFERV12128GCM:
+        enc = "SAIFERV12GCM(128)";
+        break;
+    case SSL_SAIFERV12256GCM:
+        enc = "SAIFERV12GCM(256)";
         break;
     case SSL_SEED:
         enc = "SEED(128)";
