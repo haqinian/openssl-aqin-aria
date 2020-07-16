@@ -156,6 +156,12 @@ static const ERR_STRING_DATA EVP_str_functs[] = {
     {ERR_PACK(ERR_LIB_EVP, EVP_F_R_32_12_16_INIT_KEY, 0),
      "r_32_12_16_init_key"},
     {ERR_PACK(ERR_LIB_EVP, EVP_F_S390X_AES_GCM_CTRL, 0), "s390x_aes_gcm_ctrl"},
+    {ERR_PACK(ERR_LIB_EVP, EVP_F_SAIFERV12_CCM_INIT_KEY, 0),
+     "saiferv12_ccm_init_key"},
+    {ERR_PACK(ERR_LIB_EVP, EVP_F_SAIFERV12_GCM_CTRL, 0), "saiferv12_gcm_ctrl"},
+    {ERR_PACK(ERR_LIB_EVP, EVP_F_SAIFERV12_GCM_INIT_KEY, 0),
+     "saiferv12_gcm_init_key"},
+    {ERR_PACK(ERR_LIB_EVP, EVP_F_SAIFERV12_INIT_KEY, 0), "saiferv12_init_key"},
     {ERR_PACK(ERR_LIB_EVP, EVP_F_UPDATE, 0), "update"},
     {0, NULL}
 };
@@ -249,6 +255,8 @@ static const ERR_STRING_DATA EVP_str_reasons[] = {
     {ERR_PACK(ERR_LIB_EVP, 0, EVP_R_PRIVATE_KEY_ENCODE_ERROR),
     "private key encode error"},
     {ERR_PACK(ERR_LIB_EVP, 0, EVP_R_PUBLIC_KEY_NOT_RSA), "public key not rsa"},
+    {ERR_PACK(ERR_LIB_EVP, 0, EVP_R_SAIFERV12_KEY_SETUP_FAILED),
+    "saiferv12 key setup failed"},
     {ERR_PACK(ERR_LIB_EVP, 0, EVP_R_UNKNOWN_CIPHER), "unknown cipher"},
     {ERR_PACK(ERR_LIB_EVP, 0, EVP_R_UNKNOWN_DIGEST), "unknown digest"},
     {ERR_PACK(ERR_LIB_EVP, 0, EVP_R_UNKNOWN_OPTION), "unknown option"},

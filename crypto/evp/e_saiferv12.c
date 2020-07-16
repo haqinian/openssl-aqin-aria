@@ -16,7 +16,7 @@
 # include <openssl/rand_drbg.h>
 # include "crypto/saiferv12.h"
 # include "crypto/evp.h"
-# include "modes_local.h"
+# include "crypto/modes/modes_local.h"
 # include "evp_local.h"
 
 /* SAIFERV12 subkey Structure */

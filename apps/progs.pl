@@ -162,7 +162,7 @@ foreach my $cmd (
     "bf-cbc", "bf-ecb", "bf-cfb", "bf-ofb",
     "cast5-cbc","cast5-ecb", "cast5-cfb","cast5-ofb",
     "cast-cbc", "rc5-cbc", "rc5-ecb", "rc5-cfb", "rc5-ofb",
-    "sm4-cbc", "sm4-ecb", "sm4-cfb", "sm4-ofb", "sm4-ctr"
+    "sm4-cbc", "sm4-ecb", "sm4-cfb", "sm4-ofb", "sm4-ctr",
     "saiferv12-128-cbc", "saiferv12-128-cfb",
     "saiferv12-128-ctr", "saiferv12-128-ecb", "saiferv12-128-ofb",
     "saiferv12-128-cfb1", "saiferv12-128-cfb8",

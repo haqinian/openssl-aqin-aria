@@ -4707,6 +4707,137 @@
 #define NID_aria_256_gcm                1125
 #define OBJ_aria_256_gcm                OBJ_aria,36L
 
+#define OBJ_saiferv12           1L,2L,410L,200046L,1L,1L
+
+#define SN_saiferv12_128_ecb            "SAIFERV12-128-ECB"
+#define LN_saiferv12_128_ecb            "saiferv12-128-ecb"
+#define NID_saiferv12_128_ecb           1195
+#define OBJ_saiferv12_128_ecb           OBJ_saiferv12,1L
+
+#define SN_saiferv12_128_cbc            "SAIFERV12-128-CBC"
+#define LN_saiferv12_128_cbc            "saiferv12-128-cbc"
+#define NID_saiferv12_128_cbc           1196
+#define OBJ_saiferv12_128_cbc           OBJ_saiferv12,2L
+
+#define SN_saiferv12_128_cfb128         "SAIFERV12-128-CFB"
+#define LN_saiferv12_128_cfb128         "saiferv12-128-cfb"
+#define NID_saiferv12_128_cfb128                1197
+#define OBJ_saiferv12_128_cfb128                OBJ_saiferv12,3L
+
+#define SN_saiferv12_128_ofb128         "SAIFERV12-128-OFB"
+#define LN_saiferv12_128_ofb128         "saiferv12-128-ofb"
+#define NID_saiferv12_128_ofb128                1198
+#define OBJ_saiferv12_128_ofb128                OBJ_saiferv12,4L
+
+#define SN_saiferv12_128_ctr            "SAIFERV12-128-CTR"
+#define LN_saiferv12_128_ctr            "saiferv12-128-ctr"
+#define NID_saiferv12_128_ctr           1199
+#define OBJ_saiferv12_128_ctr           OBJ_saiferv12,5L
+
+#define SN_saiferv12_192_ecb            "SAIFERV12-192-ECB"
+#define LN_saiferv12_192_ecb            "saiferv12-192-ecb"
+#define NID_saiferv12_192_ecb           1200
+#define OBJ_saiferv12_192_ecb           OBJ_saiferv12,6L
+
+#define SN_saiferv12_192_cbc            "SAIFERV12-192-CBC"
+#define LN_saiferv12_192_cbc            "saiferv12-192-cbc"
+#define NID_saiferv12_192_cbc           1201
+#define OBJ_saiferv12_192_cbc           OBJ_saiferv12,7L
+
+#define SN_saiferv12_192_cfb128         "SAIFERV12-192-CFB"
+#define LN_saiferv12_192_cfb128         "saiferv12-192-cfb"
+#define NID_saiferv12_192_cfb128                1202
+#define OBJ_saiferv12_192_cfb128                OBJ_saiferv12,8L
+
+#define SN_saiferv12_192_ofb128         "SAIFERV12-192-OFB"
+#define LN_saiferv12_192_ofb128         "saiferv12-192-ofb"
+#define NID_saiferv12_192_ofb128                1203
+#define OBJ_saiferv12_192_ofb128                OBJ_saiferv12,9L
+
+#define SN_saiferv12_192_ctr            "SAIFERV12-192-CTR"
+#define LN_saiferv12_192_ctr            "saiferv12-192-ctr"
+#define NID_saiferv12_192_ctr           1204
+#define OBJ_saiferv12_192_ctr           OBJ_saiferv12,10L
+
+#define SN_saiferv12_256_ecb            "SAIFERV12-256-ECB"
+#define LN_saiferv12_256_ecb            "saiferv12-256-ecb"
+#define NID_saiferv12_256_ecb           1205
+#define OBJ_saiferv12_256_ecb           OBJ_saiferv12,11L
+
+#define SN_saiferv12_256_cbc            "SAIFERV12-256-CBC"
+#define LN_saiferv12_256_cbc            "saiferv12-256-cbc"
+#define NID_saiferv12_256_cbc           1206
+#define OBJ_saiferv12_256_cbc           OBJ_saiferv12,12L
+
+#define SN_saiferv12_256_cfb128         "SAIFERV12-256-CFB"
+#define LN_saiferv12_256_cfb128         "saiferv12-256-cfb"
+#define NID_saiferv12_256_cfb128                1207
+#define OBJ_saiferv12_256_cfb128                OBJ_saiferv12,13L
+
+#define SN_saiferv12_256_ofb128         "SAIFERV12-256-OFB"
+#define LN_saiferv12_256_ofb128         "saiferv12-256-ofb"
+#define NID_saiferv12_256_ofb128                1208
+#define OBJ_saiferv12_256_ofb128                OBJ_saiferv12,14L
+
+#define SN_saiferv12_256_ctr            "SAIFERV12-256-CTR"
+#define LN_saiferv12_256_ctr            "saiferv12-256-ctr"
+#define NID_saiferv12_256_ctr           1209
+#define OBJ_saiferv12_256_ctr           OBJ_saiferv12,15L
+
+#define SN_saiferv12_128_cfb1           "SAIFERV12-128-CFB1"
+#define LN_saiferv12_128_cfb1           "saiferv12-128-cfb1"
+#define NID_saiferv12_128_cfb1          1210
+
+#define SN_saiferv12_192_cfb1           "SAIFERV12-192-CFB1"
+#define LN_saiferv12_192_cfb1           "saiferv12-192-cfb1"
+#define NID_saiferv12_192_cfb1          1211
+
+#define SN_saiferv12_256_cfb1           "SAIFERV12-256-CFB1"
+#define LN_saiferv12_256_cfb1           "saiferv12-256-cfb1"
+#define NID_saiferv12_256_cfb1          1212
+
+#define SN_saiferv12_128_cfb8           "SAIFERV12-128-CFB8"
+#define LN_saiferv12_128_cfb8           "saiferv12-128-cfb8"
+#define NID_saiferv12_128_cfb8          1213
+
+#define SN_saiferv12_192_cfb8           "SAIFERV12-192-CFB8"
+#define LN_saiferv12_192_cfb8           "saiferv12-192-cfb8"
+#define NID_saiferv12_192_cfb8          1214
+
+#define SN_saiferv12_256_cfb8           "SAIFERV12-256-CFB8"
+#define LN_saiferv12_256_cfb8           "saiferv12-256-cfb8"
+#define NID_saiferv12_256_cfb8          1215
+
+#define SN_saiferv12_128_ccm            "SAIFERV12-128-CCM"
+#define LN_saiferv12_128_ccm            "saiferv12-128-ccm"
+#define NID_saiferv12_128_ccm           1216
+#define OBJ_saiferv12_128_ccm           OBJ_saiferv12,37L
+
+#define SN_saiferv12_192_ccm            "SAIFERV12-192-CCM"
+#define LN_saiferv12_192_ccm            "saiferv12-192-ccm"
+#define NID_saiferv12_192_ccm           1217
+#define OBJ_saiferv12_192_ccm           OBJ_saiferv12,38L
+
+#define SN_saiferv12_256_ccm            "SAIFERV12-256-CCM"
+#define LN_saiferv12_256_ccm            "saiferv12-256-ccm"
+#define NID_saiferv12_256_ccm           1218
+#define OBJ_saiferv12_256_ccm           OBJ_saiferv12,39L
+
+#define SN_saiferv12_128_gcm            "SAIFERV12-128-GCM"
+#define LN_saiferv12_128_gcm            "saiferv12-128-gcm"
+#define NID_saiferv12_128_gcm           1219
+#define OBJ_saiferv12_128_gcm           OBJ_saiferv12,34L
+
+#define SN_saiferv12_192_gcm            "SAIFERV12-192-GCM"
+#define LN_saiferv12_192_gcm            "saiferv12-192-gcm"
+#define NID_saiferv12_192_gcm           1220
+#define OBJ_saiferv12_192_gcm           OBJ_saiferv12,35L
+
+#define SN_saiferv12_256_gcm            "SAIFERV12-256-GCM"
+#define LN_saiferv12_256_gcm            "saiferv12-256-gcm"
+#define NID_saiferv12_256_gcm           1221
+#define OBJ_saiferv12_256_gcm           OBJ_saiferv12,36L
+
 #define SN_kisa         "KISA"
 #define LN_kisa         "kisa"
 #define NID_kisa                773

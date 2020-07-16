@@ -11,9 +11,7 @@
 #ifndef HEADER_EVPERR_H
 # define HEADER_EVPERR_H
 
-# ifndef HEADER_SYMHACKS_H
-#  include <openssl/symhacks.h>
-# endif
+# include <openssl/symhacks.h>
 
 # ifdef  __cplusplus
 extern "C"
@@ -124,6 +122,10 @@ int ERR_load_EVP_strings(void);
 # define EVP_F_RC5_CTRL                                   125
 # define EVP_F_R_32_12_16_INIT_KEY                        242
 # define EVP_F_S390X_AES_GCM_CTRL                         201
+# define EVP_F_SAIFERV12_CCM_INIT_KEY                     210
+# define EVP_F_SAIFERV12_GCM_CTRL                         211
+# define EVP_F_SAIFERV12_GCM_INIT_KEY                     212
+# define EVP_F_SAIFERV12_INIT_KEY                         213
 # define EVP_F_UPDATE                                     173
 
 /*
@@ -185,6 +187,7 @@ int ERR_load_EVP_strings(void);
 # define EVP_R_PRIVATE_KEY_DECODE_ERROR                   145
 # define EVP_R_PRIVATE_KEY_ENCODE_ERROR                   146
 # define EVP_R_PUBLIC_KEY_NOT_RSA                         106
+# define EVP_R_SAIFERV12_KEY_SETUP_FAILED                 184
 # define EVP_R_UNKNOWN_CIPHER                             160
 # define EVP_R_UNKNOWN_DIGEST                             161
 # define EVP_R_UNKNOWN_OPTION                             169

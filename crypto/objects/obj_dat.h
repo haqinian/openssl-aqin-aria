@@ -10,7 +10,7 @@
  */
 
 /* Serialized OID's */
-static const unsigned char so[7762] = {
+static const unsigned char so[7951] = {
     0x2A,0x86,0x48,0x86,0xF7,0x0D,                 /* [    0] OBJ_rsadsi */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x01,            /* [    6] OBJ_pkcs */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x02,0x02,       /* [   13] OBJ_md2 */
@@ -1076,9 +1076,30 @@ static const unsigned char so[7762] = {
     0x2A,0x85,0x03,0x07,0x01,0x02,0x01,0x01,0x04,  /* [ 7736] OBJ_id_tc26_gost_3410_2012_256_paramSetD */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x02,0x0C,       /* [ 7745] OBJ_hmacWithSHA512_224 */
     0x2A,0x86,0x48,0x86,0xF7,0x0D,0x02,0x0D,       /* [ 7753] OBJ_hmacWithSHA512_256 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x01,  /* [ 7761] OBJ_saiferv12_128_ecb */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x02,  /* [ 7770] OBJ_saiferv12_128_cbc */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x03,  /* [ 7779] OBJ_saiferv12_128_cfb128 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x04,  /* [ 7788] OBJ_saiferv12_128_ofb128 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x05,  /* [ 7797] OBJ_saiferv12_128_ctr */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x06,  /* [ 7806] OBJ_saiferv12_192_ecb */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x07,  /* [ 7815] OBJ_saiferv12_192_cbc */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x08,  /* [ 7824] OBJ_saiferv12_192_cfb128 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x09,  /* [ 7833] OBJ_saiferv12_192_ofb128 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x0A,  /* [ 7842] OBJ_saiferv12_192_ctr */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x0B,  /* [ 7851] OBJ_saiferv12_256_ecb */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x0C,  /* [ 7860] OBJ_saiferv12_256_cbc */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x0D,  /* [ 7869] OBJ_saiferv12_256_cfb128 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x0E,  /* [ 7878] OBJ_saiferv12_256_ofb128 */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x0F,  /* [ 7887] OBJ_saiferv12_256_ctr */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x25,  /* [ 7896] OBJ_saiferv12_128_ccm */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x26,  /* [ 7905] OBJ_saiferv12_192_ccm */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x27,  /* [ 7914] OBJ_saiferv12_256_ccm */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x22,  /* [ 7923] OBJ_saiferv12_128_gcm */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x23,  /* [ 7932] OBJ_saiferv12_192_gcm */
+    0x2A,0x83,0x1A,0x8C,0x9A,0x6E,0x01,0x01,0x24,  /* [ 7941] OBJ_saiferv12_256_gcm */
 };
 
-#define NUM_NID 1195
+#define NUM_NID 1222
 static const ASN1_OBJECT nid_objs[NUM_NID] = {
     {"UNDEF", "undefined", NID_undef},
     {"rsadsi", "RSA Data Security, Inc.", NID_rsadsi, 6, &so[0]},
@@ -2275,9 +2296,36 @@ static const ASN1_OBJECT nid_objs[NUM_NID] = {
     {"magma-mac", "magma-mac", NID_magma_mac},
     {"hmacWithSHA512-224", "hmacWithSHA512-224", NID_hmacWithSHA512_224, 8, &so[7745]},
     {"hmacWithSHA512-256", "hmacWithSHA512-256", NID_hmacWithSHA512_256, 8, &so[7753]},
+    {"SAIFERV12-128-ECB", "saiferv12-128-ecb", NID_saiferv12_128_ecb, 9, &so[7761]},
+    {"SAIFERV12-128-CBC", "saiferv12-128-cbc", NID_saiferv12_128_cbc, 9, &so[7770]},
+    {"SAIFERV12-128-CFB", "saiferv12-128-cfb", NID_saiferv12_128_cfb128, 9, &so[7779]},
+    {"SAIFERV12-128-OFB", "saiferv12-128-ofb", NID_saiferv12_128_ofb128, 9, &so[7788]},
+    {"SAIFERV12-128-CTR", "saiferv12-128-ctr", NID_saiferv12_128_ctr, 9, &so[7797]},
+    {"SAIFERV12-192-ECB", "saiferv12-192-ecb", NID_saiferv12_192_ecb, 9, &so[7806]},
+    {"SAIFERV12-192-CBC", "saiferv12-192-cbc", NID_saiferv12_192_cbc, 9, &so[7815]},
+    {"SAIFERV12-192-CFB", "saiferv12-192-cfb", NID_saiferv12_192_cfb128, 9, &so[7824]},
+    {"SAIFERV12-192-OFB", "saiferv12-192-ofb", NID_saiferv12_192_ofb128, 9, &so[7833]},
+    {"SAIFERV12-192-CTR", "saiferv12-192-ctr", NID_saiferv12_192_ctr, 9, &so[7842]},
+    {"SAIFERV12-256-ECB", "saiferv12-256-ecb", NID_saiferv12_256_ecb, 9, &so[7851]},
+    {"SAIFERV12-256-CBC", "saiferv12-256-cbc", NID_saiferv12_256_cbc, 9, &so[7860]},
+    {"SAIFERV12-256-CFB", "saiferv12-256-cfb", NID_saiferv12_256_cfb128, 9, &so[7869]},
+    {"SAIFERV12-256-OFB", "saiferv12-256-ofb", NID_saiferv12_256_ofb128, 9, &so[7878]},
+    {"SAIFERV12-256-CTR", "saiferv12-256-ctr", NID_saiferv12_256_ctr, 9, &so[7887]},
+    {"SAIFERV12-128-CFB1", "saiferv12-128-cfb1", NID_saiferv12_128_cfb1},
+    {"SAIFERV12-192-CFB1", "saiferv12-192-cfb1", NID_saiferv12_192_cfb1},
+    {"SAIFERV12-256-CFB1", "saiferv12-256-cfb1", NID_saiferv12_256_cfb1},
+    {"SAIFERV12-128-CFB8", "saiferv12-128-cfb8", NID_saiferv12_128_cfb8},
+    {"SAIFERV12-192-CFB8", "saiferv12-192-cfb8", NID_saiferv12_192_cfb8},
+    {"SAIFERV12-256-CFB8", "saiferv12-256-cfb8", NID_saiferv12_256_cfb8},
+    {"SAIFERV12-128-CCM", "saiferv12-128-ccm", NID_saiferv12_128_ccm, 9, &so[7896]},
+    {"SAIFERV12-192-CCM", "saiferv12-192-ccm", NID_saiferv12_192_ccm, 9, &so[7905]},
+    {"SAIFERV12-256-CCM", "saiferv12-256-ccm", NID_saiferv12_256_ccm, 9, &so[7914]},
+    {"SAIFERV12-128-GCM", "saiferv12-128-gcm", NID_saiferv12_128_gcm, 9, &so[7923]},
+    {"SAIFERV12-192-GCM", "saiferv12-192-gcm", NID_saiferv12_192_gcm, 9, &so[7932]},
+    {"SAIFERV12-256-GCM", "saiferv12-256-gcm", NID_saiferv12_256_gcm, 9, &so[7941]},
 };
 
-#define NUM_SN 1186
+#define NUM_SN 1213
 static const unsigned int sn_objs[NUM_SN] = {
      364,    /* "AD_DVCS" */
      419,    /* "AES-128-CBC" */
@@ -2524,6 +2572,33 @@ static const unsigned int sn_objs[NUM_SN] = {
     1144,    /* "RSA-SM3" */
      919,    /* "RSAES-OAEP" */
      912,    /* "RSASSA-PSS" */
+    1196,    /* "SAIFERV12-128-CBC" */
+    1216,    /* "SAIFERV12-128-CCM" */
+    1197,    /* "SAIFERV12-128-CFB" */
+    1210,    /* "SAIFERV12-128-CFB1" */
+    1213,    /* "SAIFERV12-128-CFB8" */
+    1199,    /* "SAIFERV12-128-CTR" */
+    1195,    /* "SAIFERV12-128-ECB" */
+    1219,    /* "SAIFERV12-128-GCM" */
+    1198,    /* "SAIFERV12-128-OFB" */
+    1201,    /* "SAIFERV12-192-CBC" */
+    1217,    /* "SAIFERV12-192-CCM" */
+    1202,    /* "SAIFERV12-192-CFB" */
+    1211,    /* "SAIFERV12-192-CFB1" */
+    1214,    /* "SAIFERV12-192-CFB8" */
+    1204,    /* "SAIFERV12-192-CTR" */
+    1200,    /* "SAIFERV12-192-ECB" */
+    1220,    /* "SAIFERV12-192-GCM" */
+    1203,    /* "SAIFERV12-192-OFB" */
+    1206,    /* "SAIFERV12-256-CBC" */
+    1218,    /* "SAIFERV12-256-CCM" */
+    1207,    /* "SAIFERV12-256-CFB" */
+    1212,    /* "SAIFERV12-256-CFB1" */
+    1215,    /* "SAIFERV12-256-CFB8" */
+    1209,    /* "SAIFERV12-256-CTR" */
+    1205,    /* "SAIFERV12-256-ECB" */
+    1221,    /* "SAIFERV12-256-GCM" */
+    1208,    /* "SAIFERV12-256-OFB" */
      777,    /* "SEED-CBC" */
      779,    /* "SEED-CFB" */
      776,    /* "SEED-ECB" */
@@ -3467,7 +3542,7 @@ static const unsigned int sn_objs[NUM_SN] = {
     1093,    /* "x509ExtAdmission" */
 };
 
-#define NUM_LN 1186
+#define NUM_LN 1213
 static const unsigned int ln_objs[NUM_LN] = {
      363,    /* "AD Time Stamping" */
      405,    /* "ANSI X9.62" */
@@ -4408,6 +4483,33 @@ static const unsigned int ln_objs[NUM_LN] = {
      912,    /* "rsassaPss" */
      482,    /* "sOARecord" */
      155,    /* "safeContentsBag" */
+    1196,    /* "saiferv12-128-cbc" */
+    1216,    /* "saiferv12-128-ccm" */
+    1197,    /* "saiferv12-128-cfb" */
+    1210,    /* "saiferv12-128-cfb1" */
+    1213,    /* "saiferv12-128-cfb8" */
+    1199,    /* "saiferv12-128-ctr" */
+    1195,    /* "saiferv12-128-ecb" */
+    1219,    /* "saiferv12-128-gcm" */
+    1198,    /* "saiferv12-128-ofb" */
+    1201,    /* "saiferv12-192-cbc" */
+    1217,    /* "saiferv12-192-ccm" */
+    1202,    /* "saiferv12-192-cfb" */
+    1211,    /* "saiferv12-192-cfb1" */
+    1214,    /* "saiferv12-192-cfb8" */
+    1204,    /* "saiferv12-192-ctr" */
+    1200,    /* "saiferv12-192-ecb" */
+    1220,    /* "saiferv12-192-gcm" */
+    1203,    /* "saiferv12-192-ofb" */
+    1206,    /* "saiferv12-256-cbc" */
+    1218,    /* "saiferv12-256-ccm" */
+    1207,    /* "saiferv12-256-cfb" */
+    1212,    /* "saiferv12-256-cfb1" */
+    1215,    /* "saiferv12-256-cfb8" */
+    1209,    /* "saiferv12-256-ctr" */
+    1205,    /* "saiferv12-256-ecb" */
+    1221,    /* "saiferv12-256-gcm" */
+    1208,    /* "saiferv12-256-ofb" */
      291,    /* "sbgp-autonomousSysNum" */
      290,    /* "sbgp-ipAddrBlock" */
      292,    /* "sbgp-routerIdentifier" */
@@ -4657,7 +4759,7 @@ static const unsigned int ln_objs[NUM_LN] = {
      125,    /* "zlib compression" */
 };
 
-#define NUM_OBJ 1071
+#define NUM_OBJ 1092
 static const unsigned int obj_objs[NUM_OBJ] = {
        0,    /* OBJ_undef                        0 */
      181,    /* OBJ_iso                          1 */
@@ -5339,26 +5441,47 @@ static const unsigned int obj_objs[NUM_OBJ] = {
      440,    /* OBJ_pilotObjectClass             0 9 2342 19200300 100 4 */
      441,    /* OBJ_pilotGroups                  0 9 2342 19200300 100 10 */
     1065,    /* OBJ_aria_128_ecb                 1 2 410 200046 1 1 1 */
+    1195,    /* OBJ_saiferv12_128_ecb            1 2 410 200046 1 1 1 */
     1066,    /* OBJ_aria_128_cbc                 1 2 410 200046 1 1 2 */
+    1196,    /* OBJ_saiferv12_128_cbc            1 2 410 200046 1 1 2 */
     1067,    /* OBJ_aria_128_cfb128              1 2 410 200046 1 1 3 */
+    1197,    /* OBJ_saiferv12_128_cfb128         1 2 410 200046 1 1 3 */
     1068,    /* OBJ_aria_128_ofb128              1 2 410 200046 1 1 4 */
+    1198,    /* OBJ_saiferv12_128_ofb128         1 2 410 200046 1 1 4 */
     1069,    /* OBJ_aria_128_ctr                 1 2 410 200046 1 1 5 */
+    1199,    /* OBJ_saiferv12_128_ctr            1 2 410 200046 1 1 5 */
     1070,    /* OBJ_aria_192_ecb                 1 2 410 200046 1 1 6 */
+    1200,    /* OBJ_saiferv12_192_ecb            1 2 410 200046 1 1 6 */
     1071,    /* OBJ_aria_192_cbc                 1 2 410 200046 1 1 7 */
+    1201,    /* OBJ_saiferv12_192_cbc            1 2 410 200046 1 1 7 */
     1072,    /* OBJ_aria_192_cfb128              1 2 410 200046 1 1 8 */
+    1202,    /* OBJ_saiferv12_192_cfb128         1 2 410 200046 1 1 8 */
     1073,    /* OBJ_aria_192_ofb128              1 2 410 200046 1 1 9 */
+    1203,    /* OBJ_saiferv12_192_ofb128         1 2 410 200046 1 1 9 */
     1074,    /* OBJ_aria_192_ctr                 1 2 410 200046 1 1 10 */
+    1204,    /* OBJ_saiferv12_192_ctr            1 2 410 200046 1 1 10 */
     1075,    /* OBJ_aria_256_ecb                 1 2 410 200046 1 1 11 */
+    1205,    /* OBJ_saiferv12_256_ecb            1 2 410 200046 1 1 11 */
     1076,    /* OBJ_aria_256_cbc                 1 2 410 200046 1 1 12 */
+    1206,    /* OBJ_saiferv12_256_cbc            1 2 410 200046 1 1 12 */
     1077,    /* OBJ_aria_256_cfb128              1 2 410 200046 1 1 13 */
+    1207,    /* OBJ_saiferv12_256_cfb128         1 2 410 200046 1 1 13 */
     1078,    /* OBJ_aria_256_ofb128              1 2 410 200046 1 1 14 */
+    1208,    /* OBJ_saiferv12_256_ofb128         1 2 410 200046 1 1 14 */
     1079,    /* OBJ_aria_256_ctr                 1 2 410 200046 1 1 15 */
+    1209,    /* OBJ_saiferv12_256_ctr            1 2 410 200046 1 1 15 */
     1123,    /* OBJ_aria_128_gcm                 1 2 410 200046 1 1 34 */
+    1219,    /* OBJ_saiferv12_128_gcm            1 2 410 200046 1 1 34 */
     1124,    /* OBJ_aria_192_gcm                 1 2 410 200046 1 1 35 */
+    1220,    /* OBJ_saiferv12_192_gcm            1 2 410 200046 1 1 35 */
     1125,    /* OBJ_aria_256_gcm                 1 2 410 200046 1 1 36 */
+    1221,    /* OBJ_saiferv12_256_gcm            1 2 410 200046 1 1 36 */
     1120,    /* OBJ_aria_128_ccm                 1 2 410 200046 1 1 37 */
+    1216,    /* OBJ_saiferv12_128_ccm            1 2 410 200046 1 1 37 */
     1121,    /* OBJ_aria_192_ccm                 1 2 410 200046 1 1 38 */
+    1217,    /* OBJ_saiferv12_192_ccm            1 2 410 200046 1 1 38 */
     1122,    /* OBJ_aria_256_ccm                 1 2 410 200046 1 1 39 */
+    1218,    /* OBJ_saiferv12_256_ccm            1 2 410 200046 1 1 39 */
     1174,    /* OBJ_id_tc26_cipher_gostr3412_2015_magma_ctracpkm 1 2 643 7 1 1 5 1 1 */
     1175,    /* OBJ_id_tc26_cipher_gostr3412_2015_magma_ctracpkm_omac 1 2 643 7 1 1 5 1 2 */
     1177,    /* OBJ_id_tc26_cipher_gostr3412_2015_kuznyechik_ctracpkm 1 2 643 7 1 1 5 2 1 */
