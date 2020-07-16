@@ -43,9 +43,10 @@
 #define SSL_ENC_CHACHA_IDX      19
 #define SSL_ENC_ARIA128GCM_IDX  20
 #define SSL_ENC_ARIA256GCM_IDX  21
-#define SSL_ENC_NUM_IDX         22
-#define SSL_ENC_SAIFERV12128GCM_IDX  23
-#define SSL_ENC_SAIFERV12256GCM_IDX  24
+#define SSL_ENC_SAIFERV12128GCM_IDX  22
+#define SSL_ENC_SAIFERV12256GCM_IDX  23
+#define SSL_ENC_NUM_IDX         24
+
 
 /* NB: make sure indices in these tables match values above */
 
