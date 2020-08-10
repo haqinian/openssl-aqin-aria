@@ -117,7 +117,7 @@ our %config = (
   sourcedir => ".",
   target => "VC-WIN64A",
   tdirs => [ "ossl_shim" ],
-  version => "1.1.1g",
+  version => "1.1.1g-custom",
   version_num => "0x1010107fL",
 );
 
